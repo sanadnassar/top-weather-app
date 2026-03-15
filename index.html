@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="top">
+            <form id="formValue">
+                <label for="country"><h1 id="headd">Enter Location</h1></label>
+                <input type="text" id="country" name="country">
+                <button type="submit">ENTER</button>
+            </form>
+        </div>
+
+        <div id="middle">
+            <div class="weather-card">
+                <h2 id="display-timezone">City</h2>
+                <p id="display-temp">--°</p>
+                <p id="display-description">Search a city to see the weather</p>
+            </div>
+        </div>
+
+        <div id="bottom">
+        </div>
+    </div>
+    <script src="./apikey.js" defer></script>
+    <script src="./script.js" type="module" defer></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #48c5ff 0%, #2b5876 100%);
+    background-attachment: fixed;
+    color: white;
+}
+
+#main {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    height: 100vh;
+}
+
+#top, #middle, #bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); 
+    border-radius: 25px;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    text-align: center;
+    width: 300px;
+}
+
+#display-temp {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#headd {
+    font-size: 45px;
+    font-weight: 900;
+    color: white;
+}
+
+input {
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+input, button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+button {
+    background-color: white;
+    color: #48c5ff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 15px;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
